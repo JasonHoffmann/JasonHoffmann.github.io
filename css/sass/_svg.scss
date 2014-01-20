@@ -1,0 +1,106 @@
+svg {
+	pointer-events: none;
+}
+
+.line-drawing,
+.linethrough {
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.line-drawing {
+	fill: none;
+	stroke: $color-second;
+	stroke-width: .5;
+}
+
+.line-thin {
+	stroke-width: .5;
+}
+
+.line-verythin {
+	stroke-width: .25;
+}
+
+.invisible {
+	opacity: 0;
+	transition: all .5s;
+}
+
+.draw:hover .orange-fill {
+	fill: $red-opac;
+	stroke: #aaa;
+}
+
+.draw:hover .invisible {
+	opacity: 1;
+}
+
+.orange-stroke {
+	stroke: $orange;
+	fill: transparent;
+	transition: fill 1s;
+}
+
+.draw:hover .orange-stroke {
+	stroke: #aaa;
+}
+
+.red-stroke {
+	stroke: $color-second;
+}
+
+.green-stroke {
+	stroke: $green;
+}
+
+.blue-stroke {
+	stroke: $blue;
+}
+
+.black-stroke {
+	stroke: #666;
+}
+
+.linethrough {
+	width: 0;
+	transition: width 0s;
+}
+
+.line:hover .linethrough {
+	transition: width .1s;
+}
+
+.line:hover .line__work, .current .line__work {
+	width: 50px;
+}
+
+.line:hover .line__writing, .current .line__writing {
+	width: 65px;
+}
+
+.line:hover .line__contact, .current .line__contact {
+	width: 75px;
+}
+.line .is-hidden {
+}
+
+.line:hover .is-hidden, .current .is-hidden {
+	opacity: 1;
+	transition: opacity .5s;
+}
+
+
+.linethrough path {
+	fill: none;
+	stroke: $color-second;
+	stroke-width: 3;
+}
+
+path.stroke-medium {
+	stroke-width: .5;
+}
+
+path.stroke-thin {
+	stroke-width: .5;
+}

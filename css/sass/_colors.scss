@@ -1,0 +1,45 @@
+.make-tidy {
+	background: $tidy;
+}
+
+.make-incarceration {
+	background: $incarceration;
+}
+
+.make-red--bg {
+	background: $color-second;
+}
+
+.make-red {
+	color: $color-second;
+}
+
+.hover {
+	color: #999;
+	font-weight: 200;
+	text-align: center;
+}
+
+.hover:hover .head { color: $color-second; transition: color .4s; }
+
+.hover-incarceration:hover {
+	color: #007F90;
+	transition: color .4s;
+	> img { border-color: #007F90; transition: border-color .4s; }
+}
+
+.hover-tidy:hover {
+	color: #e5a379;
+	transition: color .4s;
+	> img { border-color: #e5a379; transition: border-color .4s; }
+}
+
+.hover-red:hover {
+	color: #e35d65;
+	transition: color .4s;
+	> img { border-color: #eee; transition: border-color .4s; }
+}
+
+a h1 {
+	color: #333;
+}

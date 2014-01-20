@@ -1,0 +1,64 @@
+
+.pic {
+	max-height: 4em; 
+	margin-right: 1.5em; 
+	display: inline-block; 
+	float: left;
+	border-radius: 2em;
+	margin-top: 1em;
+
+	@include respond-to(medium-screens) { 
+		max-height: 3em;
+		margin-right: 1em;
+		margin-top: .5em;
+	}
+
+	@include respond-to(little-screen) { 
+		margin-top: .25em;
+		max-height: 2.5em;
+	}
+}
+
+hr {
+	background-color: $color-second;
+	border-top: 3.5px dashed #666;
+	padding: 0;
+}
+
+.bleft {
+	border-right: 1px solid $color-second;
+	padding-right: 1em;
+}
+
+.bbottom {
+	border-bottom: 1px solid $color-second;
+}
+
+.btn {
+	padding: .5em;
+	background: #fff;
+	a { color: $color-second; }
+}
+
+.btn:hover {
+	background: #333;
+	color: #fff;
+}
+
+.btn-fixed {
+	border: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	background: #f8f8f8;
+	padding: .5em 1em .5em .5em;
+	color: $color-second;
+	font-size: .8em;
+	z-index: 999;
+	transition: all .3s;
+}
+
+.btn-fixed:hover {
+	background: #eee;
+	color: #333;
+}

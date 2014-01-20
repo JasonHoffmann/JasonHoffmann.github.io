@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "icons";
+  src:url("fonts/jays-icons.eot");
+  src:url("fonts/jays-icons.eot?#iefix") format("embedded-opentype"),
+    url("fonts/jays-icons.woff") format("woff"),
+    url("fonts/jays-icons.ttf") format("truetype"),
+    url("fonts/jays-icons.svg#untitled-font-4") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: .25em;
+  font-size: .8em;
+}
+
+.icon-pencil:before {
+  content: "a";
+}
+.icon-code-2:before {
+  content: "b";
+}
+.icon-code:before {
+  content: "c";
+}
+.icon-at-sign:before {
+  content: "d";
+}
+.icon-github-drawn:before {
+  content: "e";
+  font-size: 1.618em;
+  position: relative;
+  top: .25em;
+}
+.icon-twitter-drawn:before {
+  content: "f";
+}
+.icon-code-drawn:before {
+  content: "g";
+}
+.icon-pencil-drawn:before {
+  content: "h";
+}
+.icon-at-sign-drawn:before {
+  content: "i";
+}
+.icon-twitter:before {
+  content: "j";
+  font-size: 1.618em;
+  position: relative;
+  top: .25em;
+}
+.icon-github:before {
+  content: "k"!important;
+  font-size: 1.2em;
+}
+.icon-wordpress:before {
+  content: "l";
+  font-size: 1.618em;
+  position: relative;
+  top: .25em;
+}
+
+.icon-back:before {
+  content: "p";
+  font-size: 1.5em;
+  position: relative;
+  top: .25em;
+}
+.icon-back-alt:before {
+  content: "n";
+  font-size: 1.5em;
+  position: relative;
+  top: .25em;
+}
+
+.icon-bookmark:before {
+  content: "o";
+  font-size: 1em;
+  position: relative;
+  top: .15em;
+}

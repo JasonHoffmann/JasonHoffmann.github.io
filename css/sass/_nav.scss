@@ -1,0 +1,27 @@
+.top-nav div {
+	margin-top: 1em;
+	font-weight: 900;
+	text-transform: uppercase;
+	@include respond-to(tiny-screen) { 
+		margin-top: .5em;
+	}
+}
+
+.linethrough {
+	position:absolute;
+	top: .6em;
+	left: 1em;
+}
+
+.navtext {
+	font-family: "flood-std";
+	font-size: .65em;
+	top: -1em;
+	position: relative;
+}
+
+.top-nav a, .top-nav .current {
+@include respond-to(tiny-screen) { 
+	font-size: .8em;
+	}
+}

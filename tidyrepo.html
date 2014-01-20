@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jay Hoffmann - Front-end Developer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+
+        <script type="text/javascript" src="//use.typekit.net/rfs8vuj.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    </head>
+    <body id="page-wrap">
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <div class="header__wrap pure-g-r">
+            <div class="pure-u-2-3">
+            <img class="pic" src="img/photo-drawn3.png"><h1><!-- <span class="clip"></span> -->jAY HOFFMANN</h1>
+            <p class="caption"><em>Front-end designer, WordPress developer and in my love with passions.</em></p>
+            </div>
+
+
+            <div class="pure-u-1-3">
+                <nav class="pure-g-r top-nav">
+                <div class="pure-u-1-3 relative current" id="js-work"><span href="#" class="icon-code-drawn">Work</span>
+                    <div id="work" class="linethrough"></div>
+                    <div class="navtext">What I'm Doing</div>
+                </div>
+                <div class="pure-u-1-3 relative" id="js-writing"><a href="#" class="icon-pencil-drawn">Writing
+                    <div id="writing" class="linethrough"></div>
+                    <div class="navtext is-vishidden">What I'm Thinking</div>
+                </a>
+                </div>
+                <div class="pure-u-1-3 relative" id="js-contact"><a href="#" class="icon-at-sign-drawn">Contact
+                    <div id="contact" class="linethrough"></div>
+                    <div class="navtext is-vishidden">Where To Find Me</div>
+                </a>
+                </div>
+                </nav>
+            </div>
+
+        </header>
+
+        <section id="guts" class="make-tidy bl">
+
+            <h2 class="text-center">Tidy Repo</h2>
+
+            <div class="pure-g-r">
+            
+
+            <div class="pure-u-2-3 p-box--more middle">
+                <p>I’ve worked with WordPress since about 2006. Throughout my time with the it, I’ve gotten a good lay of the land. As a newcomer, what really drew me to WordPress was it’s extendability. With actions, hooks and filters for virtually everything, it’s easy to create a modularized chunk of code that can be plugged into any WordPress install. We call these plugins. And there are over 20,000 of them in the WordPress.org repository. Somare are great. Others haven’t been updated in years and will crash your site. If you know what to look for, this is somewhat avoidable, but even so, it is a difficult landscape to navigate.</p>
+                <p>The solution seemed simple. A site that contains only the plugins that have been tested to work. Ideally, a place where you can find the best plugin for the job, and only plugins that are 100% functional and useful. I was hard pressed to find a site like that, so I created it.</p>
+            </div>
+
+            <div class="pure-u-1">
+            </div>
+
+
+            <div class="pure-u-2-3 p-box--more bl--text">
+                <h3>Planning It Out</h3>
+                <p>When embarking on a side project, I try my hardest to treat myself like a client. Before jumping into the site, I know I needed a list of requirements and a name. The name was easy, Tidy Repo (it came to me in my sleep). The requirements were a bit more involved. 
+                    <ul class="bullets">
+                    <li>A small and concise list of plugins, organized in useful categories.</li>
+                    <li>Emphasis on search and navigation to make the right plugin findable.</li>
+                    <li>Links to the download the plugin and related resources all in one place</li>
+                </ul></p>
+                <p>These felt right to me, but there was a missing piece. When a user came to the site, I wanted them to be able to get started with the plugins right away. This meant that each plugin on the site should be accompanied by a tutorial for the average beginner. This meant <em>a lot</em> more work for me, but I couldn’t picture the site without it.</p>
+            </div>
+
+            <div class="pure-u-1-3 p-box">
+
+                <figure class="persist-area">
+                    <img class="persist-header" src="img/tidyrepo-sketchesalt.jpg">
+                    <figcaption>A few preliminary sketches</figcaption>
+                </figure>
+
+            </div>
+
+
+
+            <div class="pure-u-2-3 p-box--more bl--text">
+                <h3>Working Out the Design</h3>
+                <p>One of the biggest influences on Tidy Repo is <a href="http://www.unheap.com/">Unheap</a>, a similar repository of jQuery plugins. They’re grid structure lended itself to the project’s goals, but they also added another fun component. For each plugin that was added, they created a demonstrative graphic. This meant that searching and filtering became largely a visual experience and reduced cognitive load. I wanted to bring this into Tidy Repo, so when sketching out the design, I made sure the graphics were brought to the forefront.</p>
+                <p>But I also had that my own twist, the tutorials. It can be frustrating for a user to have to rummage through sidebars and auxiliary content to actually read something. So I settled on creating a single-column post page that was wholly focused on a pleasant reading experience.</p>
+                <p>And, of course, search and navigation would be extremely important. On the homepage, the search bar would be the first thing you see, followed by a list of categories, not tucked away, but right there, easily accessed.</p>
+                <p>Last up was the logo. I decided to pull from WordPress’ own icon library, Genericons, to bring some of their aesthetic in. Tidy Repo was to be a site to find plugins, so a “search” and “plugin” icon side by side seemed fitting.</p>
+            </div>
+
+            <div class="pure-u-1-3 p-box">
+
+                <figure class="persist-area">
+                    <img class="persist-header" src="img/colors.jpg">
+                    <figcaption>Trying out different spacing and colors</ficaption>
+                </figure>
+
+            </div>
+
+            <div class="pure-u-2-3 p-box--more bl--text">
+                <h3>Bringing it Into the Browser</h3>
+                <p>When I finish sketching a site, I usually bring it into the browser immediately, to design there with HTML + CSS in a static prototype. In order to be able to move quickly, I used Harry Robert’s Inuit CSS library, which I had been meaning to try out. It uses SASS to create a solid development foundation upon which to create a design. That, plus my usual Grunt and Git one-two punch and I’m able to get designs off the ground pretty quickly.</p>
+                <p>As I worked through the design, new possibilities revealed themselves through the interactions and mechanics of the browser, as they tend to do. I try to embrace these where I can instead of fighting against them. And on my own project, I had no problem taking them as far as they could go. For instance, I create a slide-out button on each post page, so users could flip through plugin walkthroughs without having to go back to the homepage.</p>
+                <p>The biggest challenge was giving content the proper room to breathe, while still showing a sortable and expansive list. I tweaked margins, padding and typography quite a bit. Eventually, I found a good balance with ample space, larger then average type size on posts, and slightly smaller type on the index page.</p>
+            </div>
+
+            <div class="pure-u-1-3 p-box">
+
+                <figure class="persist-area">
+                    <img class="persist-header" src="img/tidyrepo-browser.jpg">
+                    <figcaption>Letting the browser guide the development</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="pure-u-2-3 p-box--more bl--text">
+                <h3>Responsive First</h3>
+                <p>While working out the details of Tidy Repo, keeping it responsive was always top of mind. It has sort of become my default. Whenever I create a new feature, I squish the screen to see how it looks. Then, I can quickly iterate on it until it fits a variety of different screen sizes. Only then do I move on. This certainly isn’t a mobile-first strategy, which I’ve used in the past, but I do try to prioritize content over any particular screen size. Only when it is absolutely necessary do I make any substantial changes at different sizes, for instance the navigation menu on Tidy Repo.</p>
+            </div>
+
+            <div class="pure-u-1-3 p-box">
+
+                <figure class="persist-area">
+                    <img class="persist-header" src="img/tidyrepo-mobile.jpg">
+                    <figcaption>Ensuring a good reading experience on all devices</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="pure-u-2-3 p-box--more bl--text">
+                <h3>Finishing It Up in WordPress</h3>
+                <p>Since Tidy Repo is all about WordPress, I kind of had to put my money where my mouth is and use the platform. That really was no problem, since I’ve used WordPress dozens of times in the past. For a content-heavy site like the one I was created, I knew it was the perfect thing.</p>
+                <p>When moving from the front-end to the back-end, I used my HTML prototype as a foundation, swapping out template tags or database queries where it’s necessary. The only addition I had to make was the use of Advanced Custom Fields for some extra metadata and Disqus for comments. Other then that, the transition was smooth and fairly quick.</p>
+                <p>All in all, I went from having the idea to create Tidy Repo to actually launching it in about a month. Every Monday, Wednesday and Friday I post a new plugin, with my own walkthrough and a header graphic of my design. I’ve been fortunate enough to be taken in by many members of the WordPress community, and I get new feedback and plugin suggestions basically every day.</p>
+                <p>Of all the side projects I’ve worked on, Tidy Repo has been and continues to be be the greatest effort, but also the most rewarding. I don’t see it <a href="http://tidyrepo.com/">going away anytime soon</a>.</p>
+            </div>
+
+            <div class="pure-u-1-3 p-box">
+
+                <figure class="persist-area">
+                    <img class="persist-header" src="img/tidyrepo-final.jpg">
+                    <figcaption>The current site, still going strong</figcaption>
+                </figure>
+
+            </div>
+
+
+            
+            </div>
+
+            
+
+        </section>
+
+  <div class="footer">
+            <hr>
+            <div class="header__wrap pure-g-r">
+                <div class="pure-u-2-3">
+                    <p class="icon-github-drawn">For those wandering spirits, the code for this site is <a href="#">hosted on GitHub</a></p>
+                </div>
+                <div class="pure-u-1-3 text-right">
+                    <a href="https://twitter.com/jay_hoffmann" class="icon-twitter"></a>
+                    <a href="http://wordpress.org/support/profile/jhoffm34" class="icon-wordpress"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+         <script src="js/script-ck.js"></script>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jay Hoffmann - Front-end Developer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script type="text/javascript" src="//use.typekit.net/rfs8vuj.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    </head>
+    <body>
+        <div id="lightbox" class="closed"></div>
+        <button class="icon-back btn-fixed js-close is-vishidden">Back to Work</button>
+
+        <header>
+            <div class="header__wrap pure-g-r">
+            <div class="hold-2-3">
+            <a href="/"><img class="pic" src="img/photo-drawn3.png"><h1>jAY HOFFMANN</h1>
+            <p class="caption"><em>Front-end designer and developer, in love with the web.</em></p>
+            </a>
+            </div>
+
+
+            <div class="hold-1-3">
+                <nav class="pure-g-r top-nav">
+                <div class="hold-1-3 relative line"><a href="work.html" class="icon-code-drawn">Work
+                        <svg class="linethrough line__work" height="10" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 0,0 L 90,5" />
+                        </svg>
+                    <div class="navtext is-hidden">What I'm Doing</div>
+                </a>
+                </div>
+                <div class="hold-1-3 relative line current"><span class="icon-pencil-drawn">Writing</span>
+                    <svg class="linethrough line__writing" width="0" height="10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 0,0 L 90,5" />
+                    </svg>
+                    <div class="navtext is-hidden">What I'm Thinking</div>
+                </div>
+                <div class="hold-1-3 relative line"><a href="contact.html" class="icon-at-sign-drawn">Contact
+                    <svg class="linethrough line__contact" width="0" height="10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 0,0 L 90,5" />
+                    </svg>
+                    <div class="navtext is-hidden">Where To Find Me</div>
+                </a>
+                </div>
+                </nav>
+            </div>
+
+        </header>
+
+        <section class="middle pure-g-r">
+
+            <div class="pure-u-1-2 p-box--more">
+                <h3 >Torque Mag</h3>
+                <p class="push-bottom--half">I write for TorqueMag about WordPress development, plugins, and opinions. Each week, I add something new to the mix.</p>
+                <p class="push-bottom">A few recent additions:</p>
+
+                <div id="content"></div>
+            </div>
+
+            <div class="pure-u-1-2 p-box--more">
+                <a href="http://tidyrepo.com" target="_blank">
+                    <h3 class="lead icon-bookmark">Tidy Repo</h3>
+                </a>
+                <p class="push-bottom--half">Tidy Repo is a curated list of tested and trusted plugins that I founded in the middle of last year. I test each plugin then write a quick walkthrough.
+                    <br />New posts are added Monday, Wedensday and Friday.</p>
+                <p class="push-bottom">I recently added <span id="tidy-content">...</span> to the Repo.
+
+<!--                 <h3 class="lead">Elsewhere</h3>
+                <p class="push-bottom">I write whenever I can on the topics of web design, front-end development, and anything else I have time for. More coming.</p>
+                <a class="icon-bookmark" href="https://medium.com/the-distraction-age/475c5542a511">
+                    What’s With All the Sarcastic Advertising?
+                </a> -->
+            </div>
+        </section>
+
+
+
+         <div class="footer">
+            <hr>
+            <div class="header__wrap pure-g-r">
+                <div class="pure-u-2-3">
+                    <p class="icon-github-drawn">For those wandering spirits, the code for this site is <a href="#">hosted on GitHub</a></p>
+                </div>
+                <div class="pure-u-1-3 text-right">
+                    <a href="https://twitter.com/jay_hoffmann" class="icon-twitter"></a>
+                    <a href="http://wordpress.org/support/profile/jhoffm34" class="icon-wordpress"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+         <script src="js/script-ck.js"></script>
+
+<script type="text/javascript">
+
+    google.load("feeds", "1");
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://torquemag.io/feed/");
+      feed.includeHistoricalEntries();
+      feed.setNumEntries(40);
+
+      var feed2 = new google.feeds.Feed("http://tidyrepo.com/feed/")
+      feed2.setNumEntries(1);
+
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.getElementById("content");
+          var html = '';
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            if(entry.author == "Jay Hoffmann") {
+                html += '<a href="' + entry.link + '"><h3 class="title icon-bookmark">' + entry.title + '</h3></a>';
+                html += '<p class="push-bottom">' + entry.contentSnippet + '</p>';
+            }
+          }
+          container.innerHTML = html;
+        }
+      });
+
+      feed2.load(function(result2) {
+        if(!result2.error) {
+            var tidycontainer = document.getElementById("tidy-content");
+            var html = '';
+            for (var i = 0; i < result2.feed.entries.length; i++) {
+                var entry = result2.feed.entries[i];
+                html += '<a href="' + entry.link + '">' + entry.title + '</a>';
+            }
+        }
+        tidycontainer.innerHTML = html;
+      });
+    }
+    google.setOnLoadCallback(initialize);
+
+</script>
+
+    </body>
+</html>

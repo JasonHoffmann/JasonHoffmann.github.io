@@ -1,0 +1,321 @@
+.middle {
+	position: relative;
+}
+
+.draw {
+	position: absolute;
+}
+
+.search {
+	top: 1%;
+	left: 7em;
+
+	svg { 
+		width: 84px;
+		height: 84px;
+	}
+
+	@include respond-to(medium-screens) { 
+		left: 4em;
+
+		svg {
+			height: 70px;
+			width: 70px;
+		}
+	}
+
+	@include respond-to(little-screen) { 
+		left: 3em;
+		svg {
+			height: 59px;
+			width: 59px;
+		}
+	}
+
+}
+
+.lightbulb {
+	top: 2%;
+	left: 24.5em;
+
+	svg {
+		width: 36px;
+		height: 62px;
+	}
+
+	@include respond-to(medium-screens) { 
+		top: .9em;
+		left: 17em;
+		svg {
+			width: 22px;
+			height: 38px;
+		}
+	}
+
+	@include respond-to(little-screen) { 
+		top: .2em;
+		left: 12.5em;
+	}
+}
+
+.internet {
+	bottom: 15%;
+	@include respond-to(little-screen) { 
+		bottom: 23%;
+	}
+
+	@include respond-to(tiny-screen) { 
+		bottom: 19%;
+	}
+}
+
+.draw-push {
+	margin-left: 4em;
+	@include respond-to(medium-screens) { 
+		margin-left: 3em;
+	}
+
+	@include respond-to(little-screen) { 
+		margin-left: 2em;
+	}
+
+	@include respond-to(tiny-screen) { 
+		margin-left: .5em;
+	}
+}
+
+.inkandquill {
+	left: 35em;
+	top: 16.9%;
+
+	svg {
+		width: 29px;
+		height: 69px;
+	}
+
+	@include respond-to(medium-screens) { 
+		left: 24em;
+		top: 18.9%;
+
+		svg {
+			width: 18px;
+			height: 43px;
+		}
+	}
+
+	@include respond-to(little-screen) { 
+		left: 17em;
+		top: 12%;
+	}
+
+	@include respond-to(tiny-screen) { 
+		left: 11.5em;
+		top: 21.5%;
+	}
+}
+
+.rope {
+	top: 23.5%;
+	left: -19px;
+
+	svg {
+		width: 20px;
+		height: 101px;
+	}
+
+	@include respond-to(medium-screens) { 
+		top: 24.5%;
+		left: -14px;
+		svg {
+			width: 15px;
+			height: 76px;
+		}
+	}
+	@include respond-to(little-screen) { 
+		top: 19.5%;
+	}
+	@include respond-to(tiny-screen) { 
+		top: 16%;
+	}
+}
+
+.links {
+	bottom: 32.5%;
+	left: 37.8em;
+
+	svg {
+		width: 163px;
+		height: 9px;
+	}
+
+	@include respond-to(medium-screens) { 
+		left: 25.8em;
+		svg {
+			width: 120px;
+			height: 7px;
+		}
+	}
+
+	@include respond-to(little-screen) { 
+		left: 0;
+		bottom: 35.5%;
+		svg {
+			width: 90px;
+		}
+	}
+	@include respond-to(tiny-screen) { 
+		left: 4.75em;
+		bottom: 29%;
+	}
+}
+
+.brackets {
+	bottom: 59%;
+	left: 3em;
+
+	svg {
+		width: 32px;
+		height: 23px;
+	}
+	@include respond-to(medium-screens) { 
+		left: 2em;
+		bottom: 64%; 
+
+		svg {
+			width: 20px;
+			height: 14px;
+		}
+	}
+
+	@include respond-to(little-screen) { 
+		left: 1.5em;
+		bottom: 67.5%; 
+	}
+
+	@include respond-to(tiny-screen) { 
+		bottom: 64%;
+		left: 1.5em;
+	}
+}
+.quote {
+	bottom: 37.5%;
+	left: -1.7em;
+
+	svg {
+		width: 27px;
+		height: 22px;
+	}
+
+	@include respond-to(medium-screens) { 
+		left: -1.25em;
+		svg {
+			width: 20px;
+			height: 16px;
+		}
+	}
+
+	@include respond-to(little-screen) { 
+		bottom: 50.5%;
+	}
+
+	@include respond-to(tiny-screen) { 
+		bottom: 41.5%;
+		left: -.8em;
+
+		svg {
+			width: 14px;
+		}
+	}
+}
+
+#internet-iphone {
+	width: 40px;
+	height: 20px;
+
+	@include respond-to(medium-screens) { 
+		width: 30px;
+		height: 15px;
+	}
+	@include respond-to(tiny-screen) { 
+		width: 20px;
+	}
+}
+
+#internet-ipad {
+	width: 31px;
+	height: 42px;
+
+	@include respond-to(medium-screens) { 
+		width: 23px;
+		height: 31px;
+	}
+	@include respond-to(tiny-screen) { 
+		width: 14px;
+	}
+}
+
+#internet-laptop {
+	width: 91px;
+	height: 51px;
+
+	@include respond-to(medium-screens) { 
+		width: 67px;
+		height: 38px;
+	}
+	@include respond-to(tiny-screen) { 
+		width: 56px;
+	}
+}
+
+#internet-computer {
+	width: 91px;
+	height: 51px;
+
+	@include respond-to(medium-screens) { 
+		width: 67px;
+		height: 38px;
+	}
+
+	@include respond-to(little-screen) { 
+		width: 56px;
+		height: 32px;
+	}
+	@include respond-to(tiny-screen) { 
+		width: 46px;
+	}
+}
+
+#internet-tv {
+	width: 101px;
+	height: 67px;
+
+	@include respond-to(medium-screens) { 
+		width: 75px;
+		height: 50px;
+	}
+
+	@include respond-to(little-screen) { 
+		width: 63px;
+		height: 42px;
+	}
+	@include respond-to(tiny-screen) { 
+		width: 49px;
+	}
+}
+
+#internet-robot {
+	width: 77px;
+	height: 76px;
+
+	@include respond-to(medium-screens) { 
+		width: 58px;
+		height: 57px;
+	}
+	@include respond-to(little-screen) { 
+		width: 49px;
+		height: 48px;
+	}
+	@include respond-to(tiny-screen) { 
+		width: 41px;
+	}
+}

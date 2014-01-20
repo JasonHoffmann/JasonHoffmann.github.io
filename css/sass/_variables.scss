@@ -1,0 +1,33 @@
+$font-primary : "brandon-grotesque";
+$color-main : #444;
+$color-second : #e35d65;
+
+$red-opac : rgba(227, 93, 101, .3);
+
+$orange : rgba(231, 154, 95, .7);
+$orange-opac : rgba(231, 154, 95, .3);
+
+$blue : #3a8e88;
+$green : #588D4e;
+
+$black : rgba(100, 100, 100, .7);
+
+$tidy : #fbf1eb;
+$incarceration : #f6feff;
+
+
+$break-tiny: 25em; /* 400px */
+$break-small: 38em; /* 600px */
+$break-med: 55.625em; /* 890px */
+
+@mixin respond-to($media) {
+  @if $media == tiny-screen {
+    @media only screen and (max-width: $break-tiny) { @content; }
+  }
+  @else if $media == little-screen {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (max-width: $break-med) { @content; }
+  }
+}

@@ -1,0 +1,43 @@
+.header__wrap {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 2em;
+	@include respond-to(medium-screens) {
+		padding-bottom: 0; 
+	}
+
+	@include respond-to(little-screen) { 
+		padding-bottom: 0;
+	}
+}
+
+.middle {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 1em;
+}
+
+.bl--text {
+	max-width: 35em;
+}
+
+.bl {
+	color: #555;
+	font-weight: 100;
+	line-height: 1.618;
+	font-size: 1.3em;
+
+	p { margin-bottom: 1em; }
+
+	h3 { font-weight: 500; line-height: .5; margin-bottom: .5em; font-size: 1.5em; }
+
+	a:hover { color: #333; }
+}
+
+.floatingHeader {
+  position: fixed;
+  top: 0;
+  left: 1em;
+  visibility: hidden;
+  // transition: all .5s;
+}

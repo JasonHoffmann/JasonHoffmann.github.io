@@ -1,0 +1,35 @@
+
+.footer {
+	font-weight: 700;
+	font-size: .8em;
+	padding-top: 2em;
+	color: #666;
+}
+
+.bullets {
+	list-style-type: none;
+	margin-top: 1em;
+	padding-right: 1em;
+	li {
+		font-size: 1em;
+		margin-bottom: 1em;
+		
+	}
+
+			.github:before {
+			content: "k";
+		}
+
+	li:before {
+		float: left;
+		width: 1.4em;
+		font-family: "icons" !important;
+  		font-style: normal !important;
+  		font-weight: normal !important;
+  		font-variant: normal !important;
+  		text-transform: none !important;
+  		content: "p";
+  		position: relative;
+  		top: .25em;
+	}
+}
