@@ -100,7 +100,7 @@
 
 			setTimeout( function() {
 				svg.render();
-			}, Math.floor( Math.random() * 4001 + 5000 ) );
+			}, Math.floor( Math.random() * 4001 ) );
 		} );
 
 		var iphone = Array.prototype.slice.call( document.querySelectorAll( '#internet-iphone' ) );
@@ -115,7 +115,7 @@
 
 			setTimeout( function() {
 				svg.render();
-			}, 7500 );
+			}, 2500 );
 		} );
 
 		ipad.forEach( function( el ) {
@@ -123,7 +123,7 @@
 
 			setTimeout( function() {
 				svg.render();
-			}, 8250 );
+			}, 3250 );
 		} );
 
 		laptop.forEach( function( el ) {
@@ -131,7 +131,7 @@
 
 			setTimeout( function() {
 				svg.render();
-			}, 9000 );
+			}, 4000 );
 		} );
 
 		computer.forEach( function( el ) {
@@ -139,7 +139,7 @@
 
 			setTimeout( function() {
 				svg.render();
-			}, 9500 );
+			}, 4500 );
 		} );
 
 		tv.forEach( function( el ) {
@@ -147,7 +147,7 @@
 
 			setTimeout( function() {
 				svg.render();
-			}, 10000 );
+			}, 5000 );
 		} );
 
 		robot.forEach( function( el ) {
@@ -155,7 +155,7 @@
 
 			setTimeout( function() {
 				svg.render();
-			}, 10500 );
+			}, 5500 );
 		} );
 	}
 
