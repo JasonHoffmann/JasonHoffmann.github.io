@@ -3,7 +3,7 @@
 	font-weight: 900;
 	text-transform: uppercase;
 	@include respond-to(tiny-screen) { 
-		margin-top: .5em;
+		margin-top: .6em;
 	}
 }
 
@@ -11,7 +11,11 @@
 	position:absolute;
 	top: .6em;
 	left: 1em;
+	@include respond-to(tiny-screen) { 
+		top: .7em;
+	}
 }
+
 
 .navtext {
 	font-family: "flood-std";
@@ -24,4 +28,8 @@
 @include respond-to(tiny-screen) { 
 	font-size: .8em;
 	}
+}
+
+.current {
+	margin-top: 1em !important;
 }
