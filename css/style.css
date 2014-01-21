@@ -814,7 +814,8 @@ a h1 {
   text-align: right; }
 
 .center {
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: block; }
 
 .push-top {
   margin-top: 2em; }
@@ -955,7 +956,7 @@ figcaption {
 
 .top-nav div {
   margin-top: 1em;
-  font-weight: 900;
+  font-weight: 100;
   text-transform: uppercase; }
   @media only screen and (max-width: 25em) {
     .top-nav div {
@@ -1135,13 +1136,15 @@ path.stroke-thin {
     opacity: 1;
     transition: opacity .3s; } }
 
-@media only screen and (min-width: 1024px) {
-  .zoom-container {
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
-    -webkit-backface-visibility: hidden;
-    transition: all 1s; } }
+.zoom-container {
+  width: 100%; }
+  @media only screen and (min-width: 1024px) {
+    .zoom-container {
+      overflow: hidden;
+      display: inline-block;
+      position: relative;
+      -webkit-backface-visibility: hidden;
+      transition: all 1s; } }
 
 #lightbox {
   visibility: hidden;

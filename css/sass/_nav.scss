@@ -1,6 +1,6 @@
 .top-nav div {
 	margin-top: 1em;
-	font-weight: 900;
+	font-weight: 100;
 	text-transform: uppercase;
 	@include respond-to(tiny-screen) { 
 		margin-top: .6em;
