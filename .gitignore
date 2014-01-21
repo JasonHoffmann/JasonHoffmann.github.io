@@ -6,3 +6,6 @@ img/.DS_Store
 js/.DS_Store
 Raw/
 SVGS/
+Gruntfile.js
+node_modules/
+.sass-cache/
