@@ -33,3 +33,9 @@
 .current {
 	margin-top: 1em !important;
 }
+
+.current .linethrough {
+@include respond-to(tiny-screen) { 
+	top: .5em;
+	}
+}

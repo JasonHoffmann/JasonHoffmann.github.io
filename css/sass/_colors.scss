@@ -20,21 +20,21 @@
 	text-align: center;
 }
 
-.hover:hover .head { color: $color-second; transition: color .4s; }
+.hover:hover .head, .hover:focus .head { color: $color-second; transition: color .4s; }
 
-.hover-incarceration:hover {
+.hover-incarceration:hover, .hover-incarceration:focus {
 	color: #007F90;
 	transition: color .4s;
 	> img { border-color: #007F90; transition: border-color .4s; }
 }
 
-.hover-tidy:hover {
+.hover-tidy:hover, .hover-tidy:focus {
 	color: #e5a379;
 	transition: color .4s;
 	> img { border-color: #e5a379; transition: border-color .4s; }
 }
 
-.hover-red:hover {
+.hover-red:hover, .hover-red:focus {
 	color: #e35d65;
 	transition: color .4s;
 	> img { border-color: #eee; transition: border-color .4s; }
