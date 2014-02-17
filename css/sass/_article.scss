@@ -1,0 +1,50 @@
+article {
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+article .pure-g-r {
+	width: 80%;
+	margin: 0 auto;
+}
+
+article p {
+	line-height: 1.618;
+	margin-bottom: 1em;	
+}
+
+article h3 {
+	font-weight: 700;
+	margin-bottom: .5em;
+}
+
+article div {
+	margin-bottom: 2em;
+}
+
+.arthead {
+
+	display: table;
+	width: 100%;
+	/* left: -50%;
+	width: 80%; */
+}
+
+.arthead--center {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.articleTitle {
+	margin-bottom: 0;
+}
+
+.articleCaption {
+	font-size: .9em;
+	font-style: italic;
+}
+
+.imgRow {
+	margin-left: 12.5%;
+}

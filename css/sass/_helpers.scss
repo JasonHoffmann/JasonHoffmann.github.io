@@ -8,10 +8,32 @@
 
 .text-right { text-align: right; }
 
-.center { margin: 0 auto; display: block; }
+.center { margin-left: auto; margin-right: auto; display: block; }
 
 .push-top { margin-top: 2em; }
 
 .push-bottom { margin-bottom: 1.5em; }
 
 .push-bottom--half { margin-bottom: .5em; }
+
+.push-right { margin-right: 1em; }
+
+.flush { margin-bottom: 0; }
+
+.fl-left { float: left; }
+
+.fl-right { float: right; }
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}

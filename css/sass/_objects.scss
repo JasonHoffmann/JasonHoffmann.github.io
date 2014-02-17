@@ -1,23 +1,5 @@
 
-.pic {
-	max-height: 4em; 
-	margin-right: 1.5em; 
-	display: inline-block; 
-	float: left;
-	border-radius: 2em;
-	margin-top: 1em;
 
-	@include respond-to(medium-screens) { 
-		max-height: 3em;
-		margin-right: 1em;
-		margin-top: .5em;
-	}
-
-	@include respond-to(little-screen) { 
-		margin-top: .25em;
-		max-height: 2.5em;
-	}
-}
 
 hr {
 	background-color: $color-second;

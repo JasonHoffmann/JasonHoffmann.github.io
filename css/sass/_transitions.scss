@@ -41,18 +41,17 @@ width: 100%;
   height: 0;
 
   img { opacity: 1; }
-
-  p { line-height: 1.5; }
 }
 
 #lightbox.closed {
-  transition: .3s .2s height, .3s 1s width, 0 2.5s visibility;
+  height: 90em;
+  transition: .5s width, 0 2.5s visibility;
 }
 
 #lightbox.open {
   height: 90em;
   visibility: visible;
-  transition: .3s width, .3s .6s height;
+  transition: .5s width;
 }
 
 .zoom-info {
