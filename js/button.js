@@ -2,7 +2,6 @@ $(function() {
 
 	var everPushedSomething = false,
 	windowWidth = $( window ).width(),
-    $mainContent = $("#main-content"),
     $lightbox = $("#lightbox"),
     $close = $(".js-close"),
     $tidy = $(".js-tidy"),
@@ -14,12 +13,9 @@ $hover.on("click", function() {
 var href = $(this).attr("href");
    $lightbox.width(windowWidth).removeClass("closed").addClass("open");
     setTimeout(function() {
-        $lightbox.load(href + " #guts", function() {
-                        $mainContent.fadeIn(200, function() { });
-                        //initialize();
-                    });
+        $lightbox.load(href + " #guts");
         $close.removeClass("is-vishidden");
-    }, 1000);
+    }, 500);
     var _link = $(this).attr("href");
 	history.pushState(null, null, _link);
     everPushedSomething = true;
@@ -48,7 +44,7 @@ $close.on("click", function() {
             setTimeout(function() {
                 $lightbox.removeClass("make-tidy");
                 $lightbox.removeClass("make-incarceration");
-            }, 1000);
+            }, 500);
         }
         everPushedSomething = true;
     });
