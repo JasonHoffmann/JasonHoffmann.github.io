@@ -6,6 +6,10 @@ article {
 article .pure-g-r {
 	width: 80%;
 	margin: 0 auto;
+
+	@include respond-to(little-screen) { 
+		width: 90%;
+	}
 }
 
 article p {
@@ -26,8 +30,6 @@ article div {
 
 	display: table;
 	width: 100%;
-	/* left: -50%;
-	width: 80%; */
 }
 
 .arthead--center {
@@ -47,4 +49,8 @@ article div {
 
 .imgRow {
 	margin-left: 12.5%;
+
+	@include respond-to(medium-screens) { 
+		margin-left: 0;
+	}
 }
