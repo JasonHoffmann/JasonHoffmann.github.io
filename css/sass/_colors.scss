@@ -6,6 +6,10 @@
 	background: $incarceration;
 }
 
+.make-flappy {
+	background: $flappy;
+}
+
 .make-red--bg {
 	background: $color-second;
 }
@@ -32,6 +36,12 @@
 	color: #e5a379;
 	transition: color .4s;
 	> img { border-color: #e5a379; transition: border-color .4s; }
+}
+
+.hover-flappy:hover, .hover-flappy:focus {
+	color: #5cc5e6;
+	transition: color .4s;
+	> img { border-color: #5cc5e6; transition: border-color .4s; }
 }
 
 .hover-red:hover, .hover-red:focus {

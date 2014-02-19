@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jay Hoffmann - Front-end Developer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+
+        <script type="text/javascript" src="//use.typekit.net/rfs8vuj.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    </head>
+    <body>
+
+        <header role="banner">
+            <div class="header__wrap pure-g-r">
+            <div class="hold-2-3">
+            <a href="/"><img class="pic" src="img/photo-drawn3.png"><h1>jAY HOFFMANN</h1>
+            <p class="caption"><em>Front-end designer and developer, in love with the web.</em></p>
+            </a>
+            </div>
+
+
+            <div class="hold-1-3">
+                <nav class="pure-g-r top-nav" role="navigation">
+                <div class="hold-1-3 relative line"><a href="work.html" class="icon-code-drawn">Work
+                        <svg class="linethrough line__work" height="10" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 0,0 L 90,5" />
+                        </svg>
+                    <div class="navtext is-hidden">What I'm Doing</div>
+                </a>
+                </div>
+                <div class="hold-1-3 relative line"><a href="writing.html" class="icon-pencil-drawn">Writing
+                    <svg class="linethrough line__writing" width="0" height="10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 0,0 L 90,5" />
+                    </svg>
+                    <div class="navtext is-hidden">What I'm Thinking</div>
+                </a>
+                </div>
+                <div class="hold-1-3 relative line"><a href="contact.html" class="icon-at-sign-drawn">Contact
+                    <svg class="linethrough line__contact" width="0" height="10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 0,0 L 90,5" />
+                    </svg>
+                    <div class="navtext is-hidden">Where To Find Me</div>
+                </a>
+                </div>
+                </nav>
+            </div>
+
+        </header>
+
+        <article id="guts" class="make-flappy">    
+
+        <div class="arthead">
+
+            <div class="arthead--center cf">
+
+                    <img class="logo" src="img/flappy-square.png">
+                    <h2 class="articleTitle">Flappy Bert</h2>
+                    <p class="articleCaption">A spinoff of "Flappy Bird" produced in under 18 hours</p>
+            </div>
+        </div>
+
+        <div class="pure-g-r">
+            
+
+            <div class="pure-u-2-3 center">
+                <p class="intro">Flappy Bert went from an idea to a fully fleshed out game in less then 24 hours. The idea started with a co-worker about a day after the news of Flappy Bird’s removal from the App Store hit the web. He sent out an email to a few people:</p>
+                <blockquote class="intro">
+                    We should put out a game tomorrow called Floppy Bert. Fly Bert between pipes. Every time he dies he goes “Er-nie.”
+                </blockquote>
+                <p class="intro">The next day, I started working on it immediately. I had to coordinate the artwork, develop the game and do some testing. The idea was to have it done by the end of the day.</p>
+            </div>
+
+
+            
+            <h3 class="pure-u-1">The Artwork</h3>
+            <div class="pure-u-1-2">
+                <p>The idea was fairly simple. As a parody, we’d have to stick close to the original “Flappy Bird” concept but put enough spin on it to to delight people with the experience, the Sesame way.</p>
+                <p>The first step was gathering the appropriate artwork. Luckily, our Creative Services team at Sesame had already created an 8-bit version of the street sign and all of our characters, including Bert. But still some other artwork needed to be created. We needed a bird, the tubes and an outline of Sesame Street.</p>
+                <p>An illustrator here got started on an 8-bit Bernice pigeon. We decided the animation would require four steps in a spritesheet. The outline of the street was taken on by another illustrator. I would handle the tubes.</p>
+                <p>Now to dig into the game mechanics.</p>
+            </div>
+
+            <div class="pure-u-3-8 imgRow">
+
+                <figure class="persist-area">
+                    <img class="persist-header" src="img/flappybert-all.png" alt="All of the original artwork created for Flappy Bert">
+                    <figcaption>Original 8-bit Illustrations</figcaption>
+                </figure>
+
+            </div>
+
+
+            <h3 class="pure-u-1">Developing the Game</h3>
+            <div class="pure-u-1-2">
+                <p>As I talked it over with the team, it quickly became apparent that Flappy Bert would work best as an HTML5 based web app. Still, making it work on a mobile phone would be important.</p>
+                <p>Luckily, there were quite a few Flappy Bird HTML5 clones open-sourced on GitHub already. The most comprehensive, in my opinion, came from <a href="https://github.com/uralozden/flappy-bird">uralozden</a> built on top of the Phaser.JS game framework. It was lightweight and fairly useable, so I pulled it down to build on top of.</p>
+                <p>Clearly, there was a lot that needed to be changed. First, all the assets would need to be swapped out, images, audio, etc. Our vision for the game demanded that Bert yelped “Ern-ie” whenever he hit the pipes, so we dug through the archives and pulled the proper audio files.</p>
+                <p>While our creative team was still working on the artwork, I dug into the code itself. The Javascript turned out to be a fairly simple affair. Making a few corrections to the basic structure, and tweaking a few variables turned out to be enough to create a fairly functional game.</p>
+            </div>
+
+            <div class="pure-u-3-8 imgRow">
+
+                <figure class="persist-area">
+                    <img class="persist-header" src="img/flappybert-gameplay.png" alt="Screenshot of Flappy Bert's Gameplay">
+                    <figcaption>Getting the mechanics just right was tricky</ficaption>
+                </figure>
+
+            </div>
+
+            <h3 class="pure-u-1">Animating It</h3>
+            <div class="pure-u-1-2">
+                <p>The trickiest part of creating Flappy Bert came from the animations. Since our version would have a bird and Bert, we would need the animation to be a little more complex then the original game. I got the artwork for this in the early afternoon and created a 4 step sprite for the character. Looping this at fairly short intervals gave a pretty good illusion of movement by the bird and from Bert. I tweaked until I found a happy medium.</p>
+            </div>
+
+            <div class="pure-u-3-8 imgRow">
+
+                <figure class="persist-area">
+                    <img class="persist-header" src="img/flappybert-hands.png" alt="Screenshot of Tidy Repo">
+                    <figcaption>The spritesheet for Bert</figcaption>
+                </figure>
+
+            </div>
+
+            <h3 class="pure-u-1">Finishing Touches</h3>
+            <div class="pure-u-1-2">
+                <p>After I had finished creating the Bert-colored tubes, and gotten the artwork for Sesame Street for the background, I laid everything in and began testing the game. I brought in a second developer from our production team here to help with making it cross-browser and to perfect the game mechanics.</p>
+                <p>Making it cross-browser was actually fairly easy. Phaser makes everything else a cinch.</p>
+                <p>The hardest part came with the audio files. I had to make sure to include a quick feature test before assets were loaded in, so that the proper format was included.</p>
+                <p>After that, we gathered together as many people as we could, brought out all of their devices and started testing it out. As we tested, we tweaked the various game mechanic values (gravity, flap rate, speed) until we hit the perfect balance.</p>
+                <p>After just a few hours we knew it would be a hit. All in all, about 750,000 people played the game in less then a week, with an average of about 3 minutes of playing time per user. And of course, there were the awesome <a href="http://www.youtube.com/watch?v=Bcu2JviC1VA">fan commentary videos</a> and endless tweets, Instagram posts and Facebook shares to make our efforts feel validated. It was high pressure, and extremely quick moving, but the results speak for themselves and I couldn’t be more happy with the end product.</p>
+            </div>
+
+            <div class="pure-u-3-8 imgRow">
+
+                <figure class="persist-area">
+                    <img class="persist-header" src="img/flappybert-instagram.png" alt="Tidy Repo screenshot at a small screen size">
+                    <figcaption>Reaction from one player on Instagram</figcaption>
+                </figure>
+
+            </div>
+
+
+            
+            </div>
+
+            
+
+        </article>
+
+        <div class="footer" role="contentinfo">
+            <hr>
+            <div class="header__wrap pure-g-r">
+                <div class="pure-u-2-3">
+                    <p class="icon-github-drawn">For those wandering spirits, the code for this site is <a href="https://github.com/JasonHoffmann/JasonHoffmann.github.io">hosted on GitHub</a></p>
+                </div>
+                <div class="pure-u-1-3 text-right">
+                    <a href="https://twitter.com/jay_hoffmann" class="icon-twitter">Twitter</a>
+                    <a href="http://wordpress.org/support/profile/jhoffm34" class="icon-wordpress">WordPress</a>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+         <script src="js/script-ck.js"></script>
+    </body>
+</html>

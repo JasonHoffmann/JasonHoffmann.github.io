@@ -6,6 +6,7 @@ $(function() {
     $close = $(".js-close"),
     $tidy = $(".js-tidy"),
     $lcbc = $(".js-lcbc"),
+    $flappy = $(".js-flappy"),
     $hover = $(".hover");
 
 
@@ -30,6 +31,10 @@ $lcbc.on("click", function() {
     $lightbox.addClass("make-incarceration");
 });
 
+$flappy.on("click", function() {
+    $lightbox.addClass("make-flappy");
+});
+
 $close.on("click", function() {
 	window.history.back();
 });
@@ -44,6 +49,7 @@ $close.on("click", function() {
             setTimeout(function() {
                 $lightbox.removeClass("make-tidy");
                 $lightbox.removeClass("make-incarceration");
+                $lightbox.removeClass("make-flappy");
             }, 500);
         }
         everPushedSomething = true;
